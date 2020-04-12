@@ -31,5 +31,3 @@ RUN usermod -aG docker jenkins
 RUN systemctl enable docker
 
 USER jenkins
-
-ENTRYPOINT [ "/opt/entrypoint.sh" ]
