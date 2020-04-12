@@ -6,6 +6,8 @@ WORKDIR /opt
 ENV COMPOSE_VERSION=1.25.5 \
     FINGER_PRINT=0EBFCD88
 
+COPY --chown=jenkins:jenkins ./init.groovy.d /usr/share/jenkins/ref/init.groovy.d
+
 USER root
 
 # get docker ce
